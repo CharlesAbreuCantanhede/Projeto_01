@@ -6,6 +6,19 @@ public class CPF {
    private String sobremone;
    
    private float  Altura ;
+   
+   
+   private double Peso ;
+   
+   
+
+protected double getPeso() {
+	return Peso;
+}
+
+protected void setPeso(double peso) {
+	Peso = peso;
+}
 
 protected String getNome() {
 	return nome;
