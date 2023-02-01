@@ -1,29 +1,29 @@
 package P01;
 
+import java.util.Scanner;
+
 public class PrimeiraClasseJava {
 
-	@SuppressWarnings("unused")
+	@SuppressWarnings({ "unused", "unlikely-arg-type" })
 	public static void main(String[] args) {
 
-		int nota1 = 10;
-		
-		int nota2 = 60;
-		
-		int nota3 = 70;
-		
-		int nota4 = 80;
-		
-		int media = 0;
-		
-		media = (nota1 + nota2 + nota3) / 3;
-		
-		
-		if(media >= 70) {
-			System.out.println("Aluno aprovado " + media );
-		} else if (media >= 40 && media <= 69) {
-			System.out.println("Aluno em recuperação " + media );
-		} else {
-			System.out.println("Aluno reprovado " + media);
+		try (Scanner input = new Scanner(System.in)) {
+
+			// Cria um objeto Account e o atribui a myAccount
+			PrimeiraClasseJava myAccount = new PrimeiraClasseJava();
+
+			// exibe o valor inicial do nome (null)
+			System.out.printf("Initial name is: %s%n%n", myAccount.getClass());
+
+			// solicita e lê o nome
+			System.out.println("Please enter the name:");
+			String theName = input.nextLine();// lê uma linha de texto
+			myAccount.equals(theName);// insere theName em myAccount
+			System.out.println(); // gera saida de uma linha em branco
+			
+			//exibe o nome armazenado no objeto myAccount 
+			System.out.printf("Name in object myAccount is:%n%sn", myAccount.getClass());
 		}
-	}
+
+	}//fim da classe AccountTest
 }

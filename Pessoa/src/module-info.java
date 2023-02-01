@@ -6,4 +6,5 @@
  *
  */
 module Pessoa {
+	requires java.base;
 }
