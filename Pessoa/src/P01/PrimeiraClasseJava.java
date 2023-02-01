@@ -2,28 +2,28 @@ package P01;
 
 public class PrimeiraClasseJava {
 	
-	/*Variável Global é acessível a todos e o seu valor é compartilhado*/
-	
-	static int maiorIdadeGlobal = 30;
-   
-	/*Variável local porque pertence somente a esse método */
+
+	@SuppressWarnings("unused")
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		
 		
+		/*Concatenação  = Unir ou juntar dados*/
 		
-		/*Variável local porque pertence somente a esse método*/
-		int maiorIdade = 18;
-		System.out.println("Valor varíavel local = " + maiorIdade );
-		System.out.println("Valor varíavel local  Global = " + maiorIdadeGlobal );
-		  metodo2();
-
+		
+		String nome = "Charles A Cantanhede ";
+		
+		String cpf = "498.458.498.12";
+		
+		String telefone = "(63)999471691";
+		
+		String endereço = "Tocantins";
+		
+		String saida = "Meu nome é " + nome + "e o CPF: " +
+		cpf + "meu contato e : " + telefone + " e eu moro em " + 
+		endereço ;
+		
+		System.out.print(saida);
+		
+		
 	}
-	
-	public static void metodo2() {
-	 @SuppressWarnings("unused")
-	int mediaAno = 50;
-		System.out.println("Valor da varíavel Global= " + maiorIdadeGlobal);
-	}
-
 }
