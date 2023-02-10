@@ -8,35 +8,27 @@ public class PrimeiraClasseJava {
 
 	public static void main(String[] args) {
 	
+	 String nota = JOptionPane.showInputDialog("Informe a nota 1 ");
+     
+     String nota2 = JOptionPane.showInputDialog("Informe a note 2 ");
+	 
+	 
+	 double dNota1 = Double.parseDouble(nota);
 		
-		String carros = JOptionPane.showInputDialog(" Informe a quantidade de carros? ");
+	 double dNota2 = Double.parseDouble(nota2);
+	 
+	 double media = (dNota1 + dNota2 )/2;
+	 
+	 if (media >= 50) {
 		
-		String pessoas = JOptionPane.showInputDialog(" Informe a quantidade de pessoas? ");;
-		
-		
-		double carrosNumero = Double.parseDouble(carros);
-		
-		double pessoasNumero = Double.parseDouble(pessoas);
-		
-		int divisao = (int) (carrosNumero / pessoasNumero);
-		
-		double resto = carrosNumero % pessoasNumero ;
-		
-	int resposta =	JOptionPane.showConfirmDialog(null, " Deseja ver o  resultado da divisão?");
-		
-	if(resposta == 0 ) {
-		JOptionPane.showMessageDialog(null, " Dívisão para pessoas deu " + divisao);
-	}else {
-		JOptionPane.showInputDialog("Não quiser ver resultado !");
-	}
+		 if(media >= 70) {
+			JOptionPane.showMessageDialog(null, "Aluno está aprovado com média :" + media); 
+		 }
 	
-	resposta = JOptionPane.showConfirmDialog(null, " Deseja ver a o RESTO da divisão ");
-	
-	 if(resposta == 0) {
-		 JOptionPane.showConfirmDialog(null, "Resto da devisão é " + resto);
 	 }else {
-		 JOptionPane.showConfirmDialog(null, " Não quiser ver resultado! ");
+		 JOptionPane.showMessageDialog(null, " Aluno está reprovado com média :" + media );
 	 }
-		
+	 
+	 
 	}
 }
